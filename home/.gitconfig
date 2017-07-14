@@ -1,0 +1,48 @@
+[color]
+  ui = auto
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  df = diff
+  ps = push
+  pl = pull
+  ff = merge --ff-only
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  changelog = log --pretty=format:\" * %s\"
+  type = cat-file -t
+  dump = cat-file -p
+  submodule-rm = !git-submodule-rm
+  amend = commit --amend
+  newbranch = checkout -b
+  nb = checkout -b
+  ru = remote update
+  s = status -s
+  lg = log --oneline --decorate --all --graph
+[url "http://git.drupal.org/project/"]
+  insteadOf = drupal://
+[url "http://git.drupal.org/sandbox/"]
+  insteadOf = drupalsand://
+[url "git://github.com/"]
+  insteadOf = github://
+[url "git@github.com:TallerWebSolutions/"]
+  insteadOf = taller://
+[receive]
+	denyNonFastForwards = true
+[core]
+  excludesfile = ~/.gitignore
+	autocrlf = input
+[diff]
+  mnemonicprefix = true
+[push]
+  default = current
+[pull]
+  default = current
+	rebase = true
+[init]
+  templatedir = ~/.personal-git-hooks
+[rerere]
+	enabled = true
+[gc]
+	auto = 0
