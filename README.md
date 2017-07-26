@@ -2,12 +2,12 @@
 
 Our home is our Castle
 
-#Requirements
+## Requirements
 - Ruby
 - Rubygems
 
 
-#Installation
+## Installation
 
 ```
 $ sudo gem install homesick
